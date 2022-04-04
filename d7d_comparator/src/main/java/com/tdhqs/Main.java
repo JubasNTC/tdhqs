@@ -47,6 +47,14 @@ public class Main {
                             person.name() + "; Возраст: " +
                             person.age() + ";").forEach(System.out::println);
 
+            System.out.println("\nСортировка по возрасту:");
+
+            persons.stream()
+                    .sorted(Comparator.comparing(Person::age))
+                    .map(person -> "Фамилия: " + person.surname() + "; Имя: " +
+                            person.name() + "; Возраст: " +
+                            person.age() + ";").forEach(System.out::println);
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
