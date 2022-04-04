@@ -8,7 +8,6 @@ import java.util.function.Predicate;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CustomArrayListTest {
-
     @Test
     @DisplayName("Method get")
     void get() {
