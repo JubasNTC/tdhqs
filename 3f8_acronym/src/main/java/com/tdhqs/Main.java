@@ -2,6 +2,12 @@ package com.tdhqs;
 
 import java.util.Scanner;
 
+/*
+    Напишите функцию, создающую аббревиатуры.
+    Например, на входе строка: "Санкт-Петербургский Государственный Технический Институт им. Патриса Лумумбы".
+    На выходе строка: СПБГТИПЛ.
+ */
+
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -17,11 +23,10 @@ public class Main {
 
             String acronym = Acronym.getAcronym(phrase);
 
-            System.out.println(acronym);
+            System.out.println("Исходное словосочетание: ");
+            System.out.println("Акроним: " + acronym);
         } catch (Exception e) {
             System.out.println(e.getMessage());
-
-            input.nextLine();
         }
     }
 }
